@@ -113,8 +113,8 @@ void readFile(char *filePath){
     FILE *movieFile = fopen(filePath, "r");
 
     int rando_num;
-    int rand_mult;
-    srand(time(NULL) * rand_mult);
+
+    srand(time(NULL));
     rando_num = (rand() % 99999) + 0;
 
     char filenameNew[257];
@@ -285,7 +285,9 @@ int redirect(){
     {
         read_choice();
     }
-}}
+}
+    return 0;
+}
 
 int menu()
 {
@@ -311,6 +313,7 @@ int menu()
             break;
         }
     }
+    return 0;
 }
 
 int main(int argc, char **argv)
