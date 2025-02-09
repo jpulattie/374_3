@@ -44,7 +44,7 @@ struct movie *year_search(int search_year)
             sprintf(newFileName, "%d.txt", search_year);
             sprintf(newFilePath, "%s/%s", newDirectory, newFileName);
             fp = fopen(newFilePath, "w");
-            chmod(newFilePath, 0750);
+            chmod(newFilePath, 0640);
             found++;
         }
         if (current->year == search_year && found != 0)
