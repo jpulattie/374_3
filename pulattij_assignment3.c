@@ -118,7 +118,7 @@ void readFile(char *filePath){
     rando_num = (rand() % 99999) + 0;
 
     char filenameNew[257];
-    sprintf(filenameNew, "pulattij.movie.%d", rando_num);
+    sprintf(filenameNew, "pulattij.movies.%d", rando_num);
     const char *pathname = filenameNew;
     strcpy(newDirectory, pathname);
 
